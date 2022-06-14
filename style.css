@@ -1,0 +1,47 @@
+/*INDEX*/
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+
+/*MENU*/
+
+#menu li > a{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+#menu form > button{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*CARRUSEL*/
+
+.carousel-inner{
+    max-height: 39rem;
+  
+}
+
+/*MEDIA*/
+
+@media (max-width:768px) {
+    #intro #nosotros{
+        width: 90% !important;
+        text-align: center;
+    }
+
+    .catalogo-fila{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media(max-width: 576px) {
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
