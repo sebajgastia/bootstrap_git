@@ -45,3 +45,20 @@ body{
         justify-content: center;
     }
 }
+
+/*FOOTER*/
+footer{
+    background: #1b2a4e;
+    min-height: 100px;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+}
+
+#iconos i{
+    font-size:26px;
+    padding: 0 8px;
+    color: #f3f3f3;
+}
