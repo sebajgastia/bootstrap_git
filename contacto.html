@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Contacto EL EMPORIO</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark p-3" id="menu">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+          <span class="text-danger fs-5 fw-bold">EL EMPORIO</span> 
+        </a>
+          <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+              
+            <li class="nav-item">
+                <a class="nav-link" href="productos.html">Productos</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+            </li>
+            </ul> 
+          </div>
+        </div>
+      </nav>
+    <!--GALERIA CONTACTO-->
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="./img/logo2.jpg" class="d-block w-100" alt="slide">
+          </div>
+    
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./img/comercio.jpg" class="d-block w-100" alt="slide2">
+          </div>
+      </div>
+        
+        <div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+        </div>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    <br>
+    <!--MAPA CONTACTO-->
+    <section>
+        <div class="w-75 m-auto text-center" id="nosotros" >
+            <h1 class="bg-danger text-center">UBICACION Y CONTACTO</h1>
+            <p class="fs-4 text-center">Cel:11 7757 6646</p>
+            <p class="fs-4 text-center">Horarios de atencion: LUN A VIE 8:30 A 18:00</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.4285806390517!2d-58.43859718423151!3d-34.82031537649875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd3924f066395%3A0xcb1cda450e487d3!2sAv.%20Pedro%20Su%C3%A1rez%202845%2C%20Luis%20Guillon%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1655249812320!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        <div class="w-75 m-auto text-center">
+            <h1 class="bg-primary">Deja tu e-mail y pedinos un presupuesto</h1>
+        </div>
+        
+        <form action=""></form>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="mail@hotmail.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Nombre/Apellido</label>
+            <input type="email" class="form-control" id="email" placeholder="nombre y apellido">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+            <input type="email" class="form-control" id="email" placeholder="11-8000-5000">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Consulta/Presupuesto</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+
+          <div class="mb-3">
+            <button type="button" class="btn btn-primary w-100 fs-5">Enviar consulta</button>
+          </div>
+        </form>
+    
+    </section>
+    <br>
+    <!--Footer-->
+    <footer class="w-100 d-flex align-items-center justify-content-center flex-wrap">
+      <p class="fs-5 px-3 pt-3">Copyright © EL EMPORIO All rights reserved</p>
+      <div id="iconos">
+        <a href="https://www.facebook.com/AUTOPARTESELEMPORIO/?ref=page_internal"> <i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/autoparteselemporio/?hl=es-la"> <i class="bi bi-instagram"></i></a>
+      </div>
+       
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>
