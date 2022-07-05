@@ -1,90 +1,100 @@
+@charset "UTF-8";
 /*INDEX*/
-
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    overflow-x: hidden;
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow-x: hidden;
 }
 
 /*MENU*/
-
-#menu li > a{
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
+#menu a {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
 }
-
-#menu form > button{
-    font-size: 18px;
-    font-weight: bold;
+#menu button {
+  font-size: 18px;
+  font-weight: bold;
 }
 
 /*CARRUSEL*/
-
-.carousel-inner{
-    max-height: 39rem;
-  
+.carousel-inner {
+  max-height: 39rem;
 }
 
 /*MEDIA*/
-
-@media (max-width:768px) {
-    #intro #nosotros{
-        width: 90% !important;
-        text-align: center;
-    }
-
-    .catalogo-fila{
-        width: 100%;
-        text-align: center;
-    }
-}
-
-@media(max-width: 576px) {
-    .icono-wrap{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-
-/*FOOTER*/
-footer{
-    background: #1b2a4e;
-    min-height: 100px;
-}
-
-footer p{
-    color: white;
+@media (max-width: 768px) {
+  #intro #nosotros {
+    width: 90% !important;
     text-align: center;
-}
+  }
 
-#iconos i{
-    font-size:26px;
-    padding: 0 8px;
-    color: #f3f3f3;
-}
-
-/*animacion nosotros*/
-.animacion{
-    position: relative;
-}
-
-.animacion::after{
-    content: "";
-    /*border: 2px solid black;*/
-    background:#1e1e1e;
-    right: 0;
+  .catalogo-fila {
     width: 100%;
-    height: 100%;
-    position: absolute;
-    animation: maquinaescribir 3s infinite alternate;
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .icono-wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+/*FOOTER*/
+footer {
+  background: #1b2a4e;
+  min-height: 100px;
+}
+footer p {
+  color: white;
+  text-align: center;
 }
 
-@keyframes maquinaescribir{
-    from{
-        width: 100%;
-    }
-
-    to {
-        width: 0;
-    }
+#iconos i {
+  font-size: 26px;
+  padding: 0 8px;
+  color: #f3f3f3;
 }
+
+/*animacion*/
+.animacion {
+  position: relative;
+}
+
+.animacion::after {
+  content: "";
+  /*border: 2px solid black;*/
+  background: #1e1e1e;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-animation: maquinaescribir 3s infinite alternate;
+          animation: maquinaescribir 3s infinite alternate;
+}
+
+@-webkit-keyframes maquinaescribir {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+@keyframes maquinaescribir {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+.color-reseña {
+  background-color: black;
+  color: cyan;
+  font-size: 35px;
+}
+
+.color-reseña {
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */

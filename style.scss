@@ -1,0 +1,115 @@
+/*INDEX*/
+@import "colores";
+$estilos:(
+    color:black,
+    tFuente:35px,
+    tColor:cyan,
+);
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+
+/*MENU*/
+
+#menu{
+    a {
+      font-size: 18px;
+      font-weight: bold;
+      color: $colorPrimario;
+    }
+    button {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+}
+/*CARRUSEL*/
+
+.carousel-inner{
+    max-height: 39rem;
+  
+}
+
+/*MEDIA*/
+
+@media (max-width:768px) {
+    #intro #nosotros{
+        width: 90% !important;
+        text-align: center;
+    }
+
+    .catalogo-fila{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media(max-width: 576px) {
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/*FOOTER*/
+
+footer{
+    background: #1b2a4e;
+    min-height: 100px;
+    p {
+        color: $colorPrimario;
+        text-align: center;
+
+    }
+}
+
+#iconos{
+    i{
+        font-size:26px;
+        padding: 0 8px;
+        color: #f3f3f3;
+    }
+}
+
+/*animacion*/
+
+.animacion{
+    position: relative;
+}
+
+.animacion::after{
+    content: "";
+    /*border: 2px solid black;*/
+    background:#1e1e1e;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: maquinaescribir 3s infinite alternate;
+}
+
+@keyframes maquinaescribir{
+    from{
+        width: 100%;
+    }
+
+    to {
+        width: 0;
+    }
+}
+
+.color-reseña{
+    background-color: map-get($estilos, color );
+    color: map-get($estilos, tColor );
+    font-size: map-get($estilos, tFuente );
+}
+
+@mixin negrita {
+    font-weight: bold;   
+}
+
+.color-reseña{
+    @include negrita;
+}
